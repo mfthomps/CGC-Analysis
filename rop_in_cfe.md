@@ -11,7 +11,7 @@ Five CRS's demonstrated an ability to find simple ROP
 gadgets necessary to adjust stack pointers and/or
 load general registers for Type 1 POVs.
 
-##Return to libc##
+## Return to libc ##
 The most prolific user of ROP was Codejitsu.  They employed
 a "return to libc" technique to perform Type 2 POVs on 
 five different services without relying on the execution of
@@ -51,7 +51,7 @@ point of a transmit function wrapper with arguments on the
 stack that cause the service to send the entire magic page, 
 (0x1000 bytes from 0x4347C000).
 
-###KPRCA\_00065 Codejitsu vs ForAllSecure, round 33, throw 1###
+### KPRCA\_00065 Codejitsu vs ForAllSecure, round 33, throw 1 ###
 The POV described above was against a TechX RCB.  It appears the nature of 
 the RCB required the Codejitsu CRS to adjust the stack.  In the very
 same round, against the reference service run by ForAllSecure, the Codejitsu 
@@ -62,13 +62,13 @@ the stack such that the return from the transmit function led to the start
 of the *terminate* function, resulting in a silent exit from the Type 2 POV.
 
 
-##Control of a general register##
+## Control of a general register ##
 All teams except CSDS and TechX employed a limited amount
 of ROP to control the content of a general register and
 adjust the stack pointer. In most cases, 
 this resulted in Type 1 POVs, as in the following examples.
 
-###NRFIN\_00063, Shellphish vs ForAllSecure round 59, throw 1###
+### NRFIN\_00063, Shellphish vs ForAllSecure round 59, throw 1 ###
 As with all POVs for this service, a buffer overflow led to
 overwriting a function pointer.  In this case,
 the function pointer calls into a gadget at:
@@ -88,7 +88,7 @@ Which returns to this gadget:
 
 which SEGVs for the Type 1 POV, with eip:0xa19c96bf eax:0x498accea 
 
-###NRFIN_00052 DeepRed vs ForAllSecure, round 84 throw 1###
+### NRFIN_00052 DeepRed vs ForAllSecure, round 84 throw 1 ###
 Overwrite of a function pointer, transfers execution to:
 
     B7FFF00C mov     esp, eax
@@ -111,11 +111,11 @@ Thus, the retn transfers execution to
 
 Which results in a Type 1 POV, with eip:0x4e7c7450 ebp:0x584d455f 
 
-##Convert to a Type 2 POV##
+## Convert to a Type 2 POV ##
 In their one and only use of ROP, Disekt turned execution control
 into a Type 2 POV.
 
-###CROMU_00073 Disekt vs DeepRed, round 29 throw 1###
+### CROMU_00073 Disekt vs DeepRed, round 29 throw 1 ###
 Overwrote a return address
 to transfer control to this gadget,
 which ends with the equivalent of jmp ecx.
@@ -151,7 +151,7 @@ to perform a Type 2 POV.
 ## ROP to what? ##
 ForAllSecure threw a POV that took a long way home.
 
-###KPRCA\_00065 ForAllSecure vs TechX, round 34, throw 1###
+### KPRCA\_00065 ForAllSecure vs TechX, round 34, throw 1 ###
 
 The main function calls a read function, resulting in
 a single DECREE receive syscall reading this into memory:
@@ -221,7 +221,7 @@ likely deliberate. As an experiment, the return address was manually patched, an
 ForAllSecure threw this POV against TechX.  Three other teams
 employed more pedestrian POVs against that same RCB.
 
-##ROP Defenses##
+## ROP Defenses ##
 TechX generic defenses included an anti ROP technique in which their recompilation
 of a service would insert a "nop" instruction following each "call".  They would then
 replace each "retn" instruction with code that terminates the service if the destination 
