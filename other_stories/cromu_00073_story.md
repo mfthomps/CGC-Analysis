@@ -36,7 +36,7 @@ which exits with:
 
 ### CodeJitsu ###
 
-* ####Round 23 vs CSDS, TechX and DeepRed (throw 3):####
+* #### Round 23 vs CSDS, TechX and DeepRed (throw 3): ####
     
   + Used the corrupt handle_double return address
 to transfer control to 8050313 within this trampoline code block,
@@ -82,22 +82,22 @@ transmits from the magic page.
 
 ### ForAllSecure ###
 
-* ####Round 22 vs CSDS (throw 1)####
+* #### Round 22 vs CSDS (throw 1) ####
   + Used the same trampoline code as CodeJitsu above,
 but entered at 805030B.
 The service SEGVs after the retn at 805032C: POV Type 1  eip:0x7742df18 esi:0x3c3a22f0 
 
-* ####Round 22 vs DeepRed and TechX (throw 1)####
+* #### Round 22 vs DeepRed and TechX (throw 1) ####
   + Used the corrupt handle\_double return address to transfer
 control to a payload in the stack.  This payload immediatly
 transfers to a gadget that does four pops and a retn,
 leading to a SEGV: POV Type 1  eip:0xdc15f652 esi:0x5cd5320a 
 
 
-* ####Round 23 vs CSDS and TechX (throw 1)####
+* #### Round 23 vs CSDS and TechX (throw 1) ####
   + Same as vs DeepRed round 22
 
-* ####Round 23 vs DeepRed (throw 1)####
+* #### Round 23 vs DeepRed (throw 1) ####
   + Used the corrupt handle\_double return address to transfer
 execution to a payload in the stack:  
 
@@ -107,11 +107,11 @@ execution to a payload in the stack:
 
   + This simple payload led to a SEGV: POV Type 1  eip:0xdc15f652 eax:0x5cd5320a 
 
-* ####Round 28 vs CodeJitsu (throw 1)####
+* #### Round 28 vs CodeJitsu (throw 1) ####
   + Used the corrupt handle\_double return address to immediatly
 SEGV: POV Type 1  eip:0xa68d5503 ecx:0x6a9c0c3a
 
-* ####Round 28 vs DeepRed (throw 1)####
+* #### Round 28 vs DeepRed (throw 1) ####
   + Same as round 22 vs DeepRed (pop-pop-pop-pop-retn)
 
 
