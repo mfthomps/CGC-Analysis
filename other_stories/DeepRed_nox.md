@@ -21,7 +21,7 @@ However, had they not been fooled by the honeypot, the NX stack would have
 defeated the POVs they threw against other teams.  
 
 
-##POVs that were (or would have been) defeated by the DeepRed NX stack##
+## POVs that were (or would have been) defeated by the DeepRed NX stack ##
 
     CROMU_00046 from Shellphish in round 61-66
         The NX clearly defeated the Shellphish POV
