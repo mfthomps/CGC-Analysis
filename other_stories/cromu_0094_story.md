@@ -6,7 +6,7 @@ CSDS scored on this service and either found a way to defend the service
 or their competitors found ways to foil themselves.
 It was deployed in round 3 through 26.
 
-##ForAllSecure vs TechX##
+## ForAllSecure vs TechX ##
 In round 5, TechX fielded an RCB with generic defenses and an IDS filter that
 drops traffic containing protected memory addresses.  TechX let this defense
 ride throughout.
@@ -34,7 +34,7 @@ failed POV and then back again to the second.  The second failed POV
 contains a payload similar to the first, but with a different location
 of the payload.
 
-##Questionable Situational Awareness##
+## Questionable Situational Awareness ##
 It is odd that ForAllSecure did not obfuscate their protected memory address
 in these POVs, (opting instead to padd the buffer with "tens of foofofoo.. bytes").
 They demonstrated an ability to obfuscate these addresses in their
