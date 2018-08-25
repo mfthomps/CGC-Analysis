@@ -1,0 +1,36 @@
+Team 4 reaction to failing to defend
+DELTA is # rounds between failing to defend and a deployed RCB coming online
+
+CROMU_00051 start:60 end:73 first_rcb:67 first_fail:64 first_score:73  DELTA: 3
+	round:64 throw_team:1 control_corrupt SEGV
+CROMU_00055 start: 1 end:24 first_rcb: 0 first_fail: 2 first_score: 2  DELTA:999
+	round:4 throw_team:3  silent
+	round:21 throw_team:6  SEGV
+	round:22 throw_team:6  SEGV
+	round:24 throw_team:6  SEGV
+	round:20 throw_team:6  SEGV
+	round:23 throw_team:6  SEGV
+No event found in 
+CROMU_00064 start: 2 end:21 first_rcb: 4 first_fail: 2 first_score:18  DELTA: 2
+	round:2 throw_team:3 control_corrupt silent
+CROMU_00065 start:81 end:95 first_rcb:83 first_fail:81 first_score:90  DELTA: 2
+	round:81 throw_team:1 control_corrupt SEGV
+CROMU_00094 start: 3 end:26 first_rcb: 5 first_fail: 3 first_score: 6  DELTA: 2
+	round:3 throw_team:7 control_corrupt SEGV
+CROMU_00097 start: 1 end:24 first_rcb: 0 first_fail: 3 first_score: 0  DELTA:999
+	round:3 throw_team:5 control_corrupt silent
+KPRCA_00065 start:23 end:36 first_rcb:28 first_fail:23 first_score:32  DELTA: 5
+	round:23 throw_team:7 control_corrupt SEGV
+	round:23 throw_team:1 control_corrupt SEGV
+KPRCA_00094 start:64 end:77 first_rcb:76 first_fail:73 first_score: 0  DELTA: 3
+	round:73 throw_team:6 control_corrupt SEGV
+NRFIN_00052 start:73 end:95 first_rcb:75 first_fail:73 first_score: 0  DELTA: 2
+	round:73 throw_team:1 control_corrupt SEGV
+NRFIN_00063 start:49 end:62 first_rcb:53 first_fail:50 first_score: 0  DELTA: 3
+	round:50 throw_team:1 control_corrupt SEGV
+YAN01_00015 start:57 end:70 first_rcb: 0 first_fail:57 first_score:64  DELTA:999
+	round:57 throw_team:7 control_corrupt SEGV
+	round:57 throw_team:1 control_corrupt SEGV
+YAN01_00016 start:79 end:95 first_rcb: 0 first_fail:79 first_score:81  DELTA:999
+	round:79 throw_team:7 control_corrupt SEGV
+	round:79 throw_team:1 control_corrupt SEGV

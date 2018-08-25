@@ -1,0 +1,42 @@
+Team 5 reaction to failing to defend
+DELTA is # rounds between failing to defend and a deployed RCB coming online
+
+CROMU_00046 start:53 end:66 first_rcb: 0 first_fail:58 first_score: 0  DELTA:999
+	round:58 throw_team:6 control_corrupt SEGV
+CROMU_00051 start:60 end:73 first_rcb: 0 first_fail:64 first_score: 0  DELTA:999
+	round:64 throw_team:1 control_corrupt SEGV
+CROMU_00055 start: 1 end:24 first_rcb: 5 first_fail: 2 first_score: 2  DELTA: 3
+	round:23 throw_team:6  SEGV
+	round:24 throw_team:3  silent
+No event found in 
+	round:21 throw_team:6  SEGV
+	round:5 throw_team:2  SEGV
+	round:24 throw_team:6  SEGV
+	round:22 throw_team:6  SEGV
+	round:20 throw_team:6  SEGV
+CROMU_00058 start:24 end:37 first_rcb: 0 first_fail:33 first_score:35  DELTA:999
+	round:33 throw_team:6  silent
+CROMU_00064 start: 2 end:21 first_rcb: 7 first_fail: 2 first_score: 5  DELTA: 5
+	round:2 throw_team:3 control_corrupt silent
+CROMU_00065 start:81 end:95 first_rcb: 0 first_fail:81 first_score: 0  DELTA:999
+	round:81 throw_team:1 control_corrupt SEGV
+CROMU_00094 start: 3 end:26 first_rcb: 7 first_fail: 3 first_score: 4  DELTA: 4
+	round:3 throw_team:7 control_corrupt SEGV
+	round:3 throw_team:3 control_corrupt SEGV
+KPRCA_00065 start:23 end:36 first_rcb: 0 first_fail:23 first_score:24  DELTA:999
+	round:23 throw_team:7 control_corrupt SEGV
+	round:23 throw_team:1 control_corrupt SEGV
+KPRCA_00094 start:64 end:77 first_rcb: 0 first_fail:73 first_score: 0  DELTA:999
+	round:73 throw_team:6 control_corrupt SEGV
+NRFIN_00052 start:73 end:95 first_rcb: 0 first_fail:73 first_score:95  DELTA:999
+	round:73 throw_team:1 control_corrupt SEGV
+NRFIN_00059 start:36 end:49 first_rcb: 0 first_fail:40 first_score:49  DELTA:999
+	round:40 throw_team:6  silent
+NRFIN_00063 start:49 end:62 first_rcb: 0 first_fail:50 first_score: 0  DELTA:999
+	round:50 throw_team:1 control_corrupt SEGV
+YAN01_00015 start:57 end:70 first_rcb: 0 first_fail:57 first_score: 0  DELTA:999
+	round:57 throw_team:7 control_corrupt SEGV
+	round:57 throw_team:1 control_corrupt SEGV
+YAN01_00016 start:79 end:95 first_rcb: 0 first_fail:79 first_score: 0  DELTA:999
+	round:79 throw_team:7 control_corrupt SEGV
+	round:79 throw_team:1 control_corrupt SEGV

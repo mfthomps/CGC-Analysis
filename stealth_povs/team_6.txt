@@ -1,0 +1,26 @@
+Team 6 reaction to failing to defend
+DELTA is # rounds between failing to defend and a deployed RCB coming online
+
+CROMU_00055 start: 1 end:24 first_rcb: 4 first_fail: 2 first_score: 2  DELTA: 2
+	round:23 throw_team:4  silent
+No event found in 
+CROMU_00064 start: 2 end:21 first_rcb: 4 first_fail: 2 first_score: 0  DELTA: 2
+	round:6 throw_team:3 control_corrupt silent
+CROMU_00065 start:81 end:95 first_rcb:87 first_fail:81 first_score:91  DELTA: 6
+	round:81 throw_team:1 control_corrupt SEGV
+CROMU_00094 start: 3 end:26 first_rcb: 6 first_fail: 3 first_score: 4  DELTA: 3
+	round:3 throw_team:7 control_corrupt SEGV
+	round:3 throw_team:3 control_corrupt SEGV
+KPRCA_00065 start:23 end:36 first_rcb:26 first_fail:23 first_score:28  DELTA: 3
+	round:23 throw_team:7 control_corrupt SEGV
+	round:23 throw_team:1 control_corrupt SEGV
+NRFIN_00052 start:73 end:95 first_rcb:78 first_fail:73 first_score:83  DELTA: 5
+	round:73 throw_team:1 control_corrupt SEGV
+NRFIN_00063 start:49 end:62 first_rcb:52 first_fail:50 first_score:58  DELTA: 2
+	round:50 throw_team:1 control_corrupt SEGV
+YAN01_00015 start:57 end:70 first_rcb:60 first_fail:57 first_score:63  DELTA: 3
+	round:57 throw_team:1 control_corrupt SEGV
+	round:57 throw_team:7 control_corrupt SEGV
+YAN01_00016 start:79 end:95 first_rcb:87 first_fail:79 first_score:91  DELTA: 8
+	round:79 throw_team:7 control_corrupt SEGV
+	round:79 throw_team:1 control_corrupt SEGV
