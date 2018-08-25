@@ -24,14 +24,14 @@ The nature of the POVs that scored on the service are indicated
 as being either "silent", or "SEGV".  And the number of rounds
 between failing to defend and deploying an RCB are noted.
 
-##Other advantages##
+## Other advantages ##
 Another theoretical advantage of a silent POV is that competitors
 could not easily learn from the POV and use it to construct their
 own POV for a service.  However, there does not appear to be
 evidence of any CRS doing this, complicating investigation of
 whether stealth prevented it.
 
-##Who threw silent POVs?##
+## Who threw silent POVs? ##
 Some Type 2 POVs were silent due to the nature of the vulnerability,
 e.g., an over-read that leaks the protected memory page, without execution
 control ever being gained by the POV.  Other Type 2 POVs 
@@ -69,7 +69,7 @@ Last, but not least, Codejitsu threw 16 controlled silent POVs, some of which
 use ROP to "return" to the *terminate* function, resulting in an exit via
 the DECREE system call.  
 
-##Hemming and Hawing##
+## Hemming and Hawing ##
 Factors that complicate the ability to draw conclusions from any
 of this include:
 
