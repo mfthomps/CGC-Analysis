@@ -7,7 +7,7 @@ deployed a PoV that exploited this vulnerability.  This note explores whether th
 competitor interaction with the crackaddr service was any more noteworthy than any
 other successful PoV or defense fielded during the competition.
 
-#Defense#
+# Defense #
 Shellphish fielded an RCB during several rounds that would have blocked the 
 CB author's reference PoV as well as Shellphish's own PoV.  However, this RCB
 appears to only contain generic defenses applied to many of the service functions, 
@@ -24,7 +24,7 @@ CROMU\_00098 in response to finding a bug.
 To claim that Shellphish patched the crackaddr bug is akin to claiming that: "stack cookies solve the
 crackaddr problem!"  True in a way, but not interesting. 
 
-#The PoV#
+# The PoV #
 The crackaddr bug is noteworthy because it presents a problem for static analysis
 and automated program analysis tools, e.g, symbolic execution.  I see no indication from the literature that
 anyone suggests the bug is resilient to fuzzing.  The CGC service vulnerability is exploited by
