@@ -8,7 +8,7 @@ competitor interaction with the crackaddr service was any more noteworthy than a
 other successful PoV or defense fielded during the competition.
 
 # Defense #
-Shellphish fielded an RCB during several rounds that would have blocked the 
+Shellphish fielded an RCB for during several rounds that would have blocked the 
 CB author's reference PoV as well as Shellphish's own PoV.  However, this RCB
 appears to only contain generic defenses applied to many of the service functions, 
 e.g., execution control flow protections,
