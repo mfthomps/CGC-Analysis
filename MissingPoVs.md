@@ -7,7 +7,7 @@ albeit without information about who threw what at whom and when. Information
 about how to find the missing files is included at the end of this note.
 
 ## Example missing files ##
-In round 56, none of the CodeJitus PoVs against Deep Red appear in the PoV
+In round 56, none of the CodeJitsu PoVs against Deep Red appear in the PoV
 sections of the archive.  For example, this POV was thrown by CodeJitsu against Deep Red's  
 NRFIN_00063 service in round 56:
     2347155893-310730c3b3d08e1bc972633c23a7f808f2cb6d838c156b8f78e3fb2a663b67c1.pov
@@ -27,11 +27,14 @@ could have known about the upcoming filter, they switched out their working PoV 
 with the PoV referenced above.  That behavior runs counter to the narrative of autonomous systems
 adapting to changes in offense and defense in real time.
 
-## The PoV contextual information ## is available at:
+## The PoV contextual information ## 
+is available at:
 https://raw.githubusercontent.com/mfthomps/cgc-monitor/master/cgc-monitor/scoreUtils/povs_by_round.csv
 That csv includes round,defender,csid,thrower,num_throws,file_name
 Append the common name of the service, e.g., NRFIN_00063, and the filename to this URL:
-https://github.com/lungetech/cgc-cfe-submission-corpus/raw/master/
+https://github.com/lungetech/cgc-cfe-submission-corpus/raw/master/,
+e.g., 
+https://github.com/lungetech/cgc-cfe-submission-corpus/raw/master/NRFIN_00063/2347155893-310730c3b3d08e1bc972633c23a7f808f2cb6d838c156b8f78e3fb2a663b67c1.pov
 The team map is at https://github.com/mfthomps/cgc-monitor/blob/master/cgc-monitor/scoreUtils/TeamMap.txt
 And the CSID/common name map is at https://github.com/mfthomps/cgc-monitor/blob/master/cgc-monitor/scoreUtils/cbmap.txt
 
